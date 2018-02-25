@@ -1,4 +1,3 @@
 def count_elements(array)
-  # code goes here
+  array.group_by { |v| v }.map { |k, v| [k, v.length] }.to_h
 end
- 
